@@ -1,0 +1,7 @@
+server {
+    listen 80;
+
+    location / {
+        proxy_pass http://{{ hostvars['staging-backend'].ansible_host }}:5000;
+    }
+}
