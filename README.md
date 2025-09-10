@@ -44,13 +44,14 @@ Automated-Multi-Tier-Application-Deployment-with-Ansible/
 
 ## ⚙️ Features
 
-🔹 Automated installation and configuration of **Nginx, Flask, and MySQL**
-🔹 **Systemd service** for backend Flask app
-🔹 **Reverse proxy** setup in Nginx to forward traffic to backend
-🔹 **Database initialization** with user and schema creation
-🔹 Use of **templates (Jinja2)** for dynamic configuration
-🔹 **Handlers** for automatic service restarts on config changes
-🔹 Environment separation with **staging** and **production** inventories
+
+- Automated installation and configuration of **Nginx, Flask, and MySQL**
+- **Systemd service** for backend Flask app
+- **Reverse proxy** setup in Nginx to forward traffic to backend
+- **Database initialization** with user and schema creation
+- Use of **templates (Jinja2)** for dynamic configuration
+- **Handlers** for automatic service restarts on config changes
+- Environment separation with **staging** and **production** inventories
 
 ---
 
