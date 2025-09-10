@@ -1,0 +1,24 @@
+---
+- name: Configure common dependencies
+  hosts: all
+  become: true
+  roles:
+    - common
+
+- name: Setup database
+  hosts: database
+  become: true
+  roles:
+    - database
+
+- name: Setup backend app
+  hosts: backend
+  become: true
+  roles:
+    - backend
+
+- name: Setup frontend (Nginx)
+  hosts: frontend
+  become: true
+  roles:
+    - frontend
