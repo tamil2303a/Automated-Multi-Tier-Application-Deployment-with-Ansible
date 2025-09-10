@@ -1,0 +1,18 @@
+---
+- name: Install MySQL
+  apt:
+    name: [mysql-server, python3-pymysql]
+    state: present
+    update_cache: yes
+
+- name: Create database and user
+  mysql_db:
+    name: myapp
+    state: present
+
+- name: Create user
+  mysql_user:
+    name: userone
+    password: password@1234
+    priv: "myapp.*:ALL"
+    state: present
