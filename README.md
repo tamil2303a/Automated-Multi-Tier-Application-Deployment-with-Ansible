@@ -82,7 +82,7 @@ staging-db ansible_host=192.168.1.12 ansible_user=ubuntu
 ansible-playbook -i inventory/staging.ini playbooks/site.yml
 ```
 
-Verification
+## 🔍 Verification
 
 - Frontend (Nginx) → http://<frontend-server-ip>
 
