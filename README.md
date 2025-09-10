@@ -13,6 +13,7 @@ It follows **Ansible best practices** with roles, templates, handlers, and envir
 
 ## 📂 Project Structure
 
+```bash
 Automated-Multi-Tier-Application-Deployment-with-Ansible/
 ├── README.md
 ├── ansible.cfg
@@ -36,19 +37,20 @@ Automated-Multi-Tier-Application-Deployment-with-Ansible/
 │ └── database/
 │ ├── tasks/main.yml
 │ └── templates/db_setup.sql.j2
+```
 
 
 ---
 
 ## ⚙️ Features
 
-- 🔹 Automated installation and configuration of **Nginx, Flask, and MySQL**
-- 🔹 **Systemd service** for backend Flask app
-- 🔹 **Reverse proxy** setup in Nginx to forward traffic to backend
-- 🔹 **Database initialization** with user and schema creation
-- 🔹 Use of **templates (Jinja2)** for dynamic configuration
-- 🔹 **Handlers** for automatic service restarts on config changes
-- 🔹 Environment separation with **staging** and **production** inventories
+🔹 Automated installation and configuration of **Nginx, Flask, and MySQL**
+🔹 **Systemd service** for backend Flask app
+🔹 **Reverse proxy** setup in Nginx to forward traffic to backend
+🔹 **Database initialization** with user and schema creation
+🔹 Use of **templates (Jinja2)** for dynamic configuration
+🔹 **Handlers** for automatic service restarts on config changes
+🔹 Environment separation with **staging** and **production** inventories
 
 ---
 
